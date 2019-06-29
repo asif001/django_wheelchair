@@ -26,7 +26,7 @@ SECRET_KEY = '7r^b82uy@=4n%5ot6jn!3(5ln!-av*@95#%8n+!qun=eh982b#'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ["django-wheelchair.herokuapp.com"]
+ALLOWED_HOSTS = ["django-wheelchair.herokuapp.com", "127.0.0.1"]
 
 
 # Application definition
@@ -38,6 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'wheelchair.apps.WheelchairConfig',
 ]
 
 MIDDLEWARE = [

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+{% load static %}
+<head>
+    <meta charset="UTF-8">
+    <title>Wheelchair</title>
+    <script src="{% static 'wheelchair/js/update.js' %}"></script>
+    <script src="{% static 'wheelchair/js/trigger.js' %}"></script>
+    <script>
+        setInterval(updateFun, 1000);
+    </script>
+</head>
+<body>
+    <p id="Accelerometer"></p>
+    <p id="FallStatus"></p>
+    <p>
+    <button id="trigger" onclick="triggerFun()" style="visibility: hidden">Trigger</button>
+    </p>
+</body>
+</html>
